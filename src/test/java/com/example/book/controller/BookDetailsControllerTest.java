@@ -47,7 +47,6 @@ public class BookDetailsControllerTest
 	{
 		bookDetailsRepository.deleteAll();
 	}
-	
 	@Test
 	public void testCreate()
 	{
@@ -66,7 +65,6 @@ public class BookDetailsControllerTest
 		
 		//then
 		assertEquals(1,bookDetailsRepository.count());	
-		
 	}
 	
 	@Test
@@ -89,7 +87,6 @@ public class BookDetailsControllerTest
 		//then
 		ValidatableResponse then = RestAssured.given(requestSpecification).contentType("application/json").
 		accept(MediaType.APPLICATION_JSON_VALUE).delete("/delete/"+book.getId()).then();
-		
 		//then
 		assertEquals(2, bookDetailsRepository.count());
 	}

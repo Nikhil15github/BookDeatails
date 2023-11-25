@@ -41,8 +41,8 @@ public class BookDetailsTest
 		bookDetailsRepository.save(data);
 		
 		BookDetailsModule data1 = new BookDetailsModule();
-		data.setName("nikk p");
-		data.setAuthorName("ngg p");
+		data.setName("Automic Habit");
+		data.setAuthorName("James Clear");
 		
 		bookDetailsRepository.save(data1);
 		
